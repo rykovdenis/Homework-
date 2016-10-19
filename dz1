@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{	
+			int a = 100;
+			int j = 2;
+			while (a < 1000) {
+				for  (j = 2; j <= a; j++) {
+					if (a % j == 0) {
+						break;
+					}
+
+				}
+				if (j == a) {
+					Console.WriteLine ("{0}", j);
+					j = 2;
+				}
+				a++;
+			}
+			Console.Read();
+		}
+	}
+}
